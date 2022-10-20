@@ -1,0 +1,150 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(275deg, #af86f1 28%, #80bef0 75%);
+}
+
+/* Etiquette du mode sombre : texte + case à cocher */
+.darkMode {
+	position: absolute;
+	color: rgb(90, 90, 90);
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	width: 9%;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+
+/* Case à cocher activant/désactivant le mode sombre */
+#darkToggle {
+	width: 2rem;
+	height: 2rem;
+}
+
+/* Titre du site */
+h1 {
+	color: rgb(255, 254, 253);
+	font-size: 50px;
+	text-shadow: rgb(166, 4, 172) 0px 4px 5px;
+	text-align: center;
+}
+
+/* Bouton du menu déroulant */
+.dropbtn {
+	background-image: linear-gradient(to right, #b029ff 0%, #258ce0 51%, #cb17db 100%);
+	padding: 7px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 10px;
+	border: white;
+}
+
+/* Menu déroulant */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Menu déroulant caché par défaut */
+.dropdown-content {
+	position: absolute;
+	background-color: #bde9ff;
+	text-align: center;
+}
+
+/* Contenu du menu déroulant */
+select {
+	background-image: linear-gradient(to right, #b029ff 35%, #258ce0 100%);
+	padding: 7px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	background-size: auto;
+	border-radius: 10px;
+	border: white;
+	background-color: #80bef0;
+	color: white;
+	list-style: none;
+}
+
+/* Ligne de texte pour créer une tâche */
+#app-field {
+	height: 100%;
+	padding: 7px 7px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	border: none;
+}
+
+/* Ligne de texte pour créer une tâche quand elle est activée */
+#app-field:focus {
+	outline: none;
+}
+
+/* Bouton d'ajout de la tâche */
+#app-btn {
+	background-image: linear-gradient(to right, #b029ff 0%, #258ce0 51%, #cb17db 100%);
+	padding: 7px 37.5px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 10px;
+	border: none;
+}
+
+/* Bouton d'ajout de la tâche lorsque le curseur le survole */
+#app-btn:hover {
+	background-position: right center;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Section contenant les cartes et leurs contenus */
+section {
+	text-align: center;
+	justify-content: space-between;
+	display: inline-block;
+}
+
+/* Ligne contenant les différentes cartes  */
+.row {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+/* Cartes */
+.today,
+.this-week,
+.this-month {
+	margin: 5px;
+	padding-bottom: 5px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+	text-align: center;
+	width: 100%;
+	height: fit-content;
+	word-break: break-all;
+}
+
+/* Titre de la carte */
+h3 {
+	/* background-color: #c9abf8; */
+	background-image: linear-gradient(to right, #ff4f4f 25%, #ff986f 70%);
+	color: #fff;
+}
+
+/* Tâche contenu dans la carte */
+.liCard {
+	background-color: rgb(230, 230, 230);
+	padding: 6px 6px;
+	border-radius: 10px;
+	margin: 5px;
+	list-style: none;
+}

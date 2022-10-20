@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Lien important la feuille de style css -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- Lien important des icônes venant de Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		/>
+		<title>To do list</title>
+	</head>
+	<body>
+		<!-- Titre de la page -->
+		<h1>My To Do List :</h1>
+
+		<!-- Etiquette activant/désactivant le mode sombre -->
+		<div class="darkMode">
+			<div><label>Dark Mode :</label></div>
+			<!-- Case à cocher activant/désactivant le mode sombre -->
+			<div><input type="checkbox" onclick="toggleTheme()" id="darkToggle" /></div>
+		</div>
+
+		<!-- Section contenant le menu déroulant des dates, la zone de texte pour ajouter des tâches et le bouton d'ajout de la tâche -->
+		<section>
+			<!-- Menu déroulant -->
+			<div class="dropdown">
+				<select name="select" id="text">
+					<option value="today">Today</option>
+					<option value="this_week">This week</option>
+					<option value="this_month">This month</option>
+				</select>
+			</div>
+			<!-- Zone de texte de la tâche -->
+			<input type="text" placeholder="TO DO" id="app-field" />
+			<!-- Bouton ajoutant la tâche -->
+			<input type="button" value="Add" id="app-btn" />
+		</section>
+
+		<!-- Ligne contenant les cartes des dates -->
+		<div class="row">
+			<!-- Carte "aujourd'hui" -->
+			<div class="today">
+				<h3>Today</h3>
+			</div>
+
+			<!-- Carte "Cette semaine" -->
+			<div class="this-week">
+				<h3>This week</h3>
+			</div>
+
+			<!-- Carte "Ce mois-ci" -->
+			<div class="this-month">
+				<h3>This month</h3>
+			</div>
+		</div>
+
+		<!-- Script insérant le javascript -->
+		<script src="js.js"></script>
+	</body>
+</html>
